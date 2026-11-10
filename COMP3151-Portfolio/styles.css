@@ -1,0 +1,214 @@
+body{
+	background-color: #00FFFF;/*#888888*/
+	color: #ffffff;
+	padding: 10px;
+	margin-left:auto;
+	margin-right:auto;
+/* 	background-image:  url(images/pexels-abdullah-ghatasheh-1631677.jpg);
+	Photo by Abdullah Ghatasheh: https://www.pexels.com/photo/calm-body-of-water-during-golden-hour-1631677/ */
+ 	background-position:  center top;
+ 	background-repeat:  no-repeat;
+ 	/*background-size:  cover;*/
+ 	background-attachment: fixed;
+}
+
+header{
+	text-align:center;
+	background-image: url(images/portrait.jpg);
+	background-repeat:  no-repeat;
+	background-size: 100%;
+	position: fixed;
+	z-index:-1;
+}
+#header-div{
+	z-index: 1;
+}
+.area-break{
+	z-index: 1;
+}
+.heading-div{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	border-radius: 25px;
+
+
+
+}
+section{
+	background-color: #00FFFF;
+	width:100%;
+	z-index:1;
+	border-radius: 25px;
+
+}
+#about{
+		background:#019b84;
+}
+#university{
+		background:#019b84;
+}
+#administrators{
+		background:#019b84;
+}
+#other{
+		background:#019b84;
+}
+
+
+.infobox{
+	width: 100%;
+	/*height:300px;*/
+	border:2px solid #FFFFFF;
+	border-radius: 25px;
+}
+
+.general{
+	display: grid;
+	grid-template-columns: 30% 40%30%;
+	grid-template-rows: auto auto auto;
+	background-color:#01579B;
+	grid-template-areas:
+	'.caption .'
+	'. . .'
+	'description description description';
+}
+
+.specific{
+	height:350px;
+	display: grid;
+	grid-template-columns: 30% 40%30%;
+	grid-template-rows: 20% 5% 75%;
+	background-color:#004963;
+	grid-template-areas:
+	'. caption .'
+	'.  .  .'
+	'description description display';
+}
+
+.caption{
+	grid-area: caption;
+	text-align: center;
+}
+.description{
+	grid-area: description;
+	margin:0px 10px
+}
+
+.display{
+	grid-area: display;
+	width:90%;
+	margin:10px;
+
+}
+.archive{
+	border:2px solid #FFFFFF;
+	border-radius: 25px;
+	background-color: #004963;
+	text-align:center;
+
+
+}
+.gallery{
+	width: 100%;
+	border:2px solid #FFFFFF;
+	border-radius: 25px;
+
+	display: grid;
+	grid-template-columns:auto auto auto;
+	grid-template-rows:auto auto auto auto auto auto auto auto;
+	background-color: #004963;
+	margin:10px, 10px, 10px, 10px;
+	grid-template-areas:
+	'display display display'
+	'display display display'
+	'display display display'
+	'display display display'
+	'display display display';
+}
+@media(min-width:000px){
+	body{width:600px;}
+	header{width:600px;height:300px;}
+	#header-div{width:600px;height:300px;}
+	.area-break{height:50px;}
+	.infobox{font-size: 12px;}
+	.footer-box{
+	width: 160px;
+	height: 90px;
+	justify-content:center;
+	font-size: 13px;
+}
+	/*.gallery{height:1200px;}*/
+}
+@media(min-width:1000px){
+	body{width:60vw;}
+	header{width:60vw; height:30vw;}
+	#header-div{width:60vw;height:30vw;}
+	.area-break{height:5vw;}
+	.infobox{font-size: 12px;}
+	.footer-box{
+	width: 16vw;
+	height: 9vw;
+	justify-content:center;
+	font-size: 1.3vw;
+}
+
+		/*.gallery{height:120vw;}*/
+
+}
+@media(min-width:1500px){
+		.infobox{font-size: 14px;}
+}
+img{
+	object-fit: cover;
+}
+a{
+	object-fit: cover;
+}
+h1{
+	color: #dee3ea;
+}
+footer{
+	width: 100%;
+	border:2px solid #FFFFFF;
+	border-radius: 25px;
+	background-color: #019b20;
+	justify-content: center;
+	text-align:center;	
+	display:grid;
+	grid-template-columns: 6% 26% 6% 26% 6% 26% 6%;
+	grid-template-areas: '. linked-in . phone  . email . ';
+
+}
+.footer-box{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+#linked-in{
+	grid-area:linked-in;
+}
+#email{
+	grid-area:email;
+	text-align: center;
+
+}
+#phone{
+	grid-area:phone;
+	text-align: center;
+
+
+}
+/*table tr td{
+	border:1px solid white;
+}*/
+
+#audio-table{
+	grid-template-columns: 50% 50%;
+}
+
+
+
+
+
+
